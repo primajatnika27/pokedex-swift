@@ -11,7 +11,9 @@ import SwiftUI
 struct PokeCleanArchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                AppRouter.makePokemonView()
+            }.tint(.white)
         }
     }
 }
